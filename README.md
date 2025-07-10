@@ -53,23 +53,41 @@ A React Native Expo app for small business owners to manage sales, inventory, ex
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Node.js 18+
-- Expo CLI: `npm install -g @expo/cli`
-- iOS Simulator (Mac) or Android Studio
-
-### Installation
+### Option 1: Automated Setup (Recommended)
 ```bash
 # Clone the repository
 git clone <repository-url>
 cd shop-manager
 
-# Install dependencies
-npm install
+# Run the setup script
+./setup.sh
 
 # Start the development server
 npx expo start
 ```
+
+### Option 2: Manual Setup
+```bash
+# Prerequisites: Node.js 18+, Expo CLI
+npm install -g @expo/cli
+
+# Clone and install
+git clone <repository-url>
+cd shop-manager
+npm install
+npx expo install
+
+# Start development
+npx expo start
+```
+
+### Running the App
+- **iOS**: Press `i` in terminal or scan QR with Expo Go
+- **Android**: Press `a` in terminal or scan QR with Expo Go  
+- **Web**: Press `w` in terminal or visit http://localhost:19006
+
+📖 **Detailed setup instructions**: See [SETUP_GUIDE.md](SETUP_GUIDE.md)  
+🚀 **Quick start summary**: See [QUICK_START.md](QUICK_START.md)
 
 ### First Run
 1. **Setup Authentication**: Create your local account with password and optional biometrics
@@ -280,12 +298,20 @@ eas submit --platform all
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Support
+## 📞 Support & Documentation
 
-- **Documentation**: [Implementation Guide](IMPLEMENTATION_GUIDE.md)
-- **Architecture**: [Architecture Overview](ARCHITECTURE.md)
-- **Issues**: GitHub Issues
-- **Discussions**: GitHub Discussions
+### 📚 Guides
+- **⚡ Quick Start**: [QUICK_START.md](QUICK_START.md) - Get running in 2 minutes
+- **🚀 Setup Guide**: [SETUP_GUIDE.md](SETUP_GUIDE.md) - Detailed local development setup
+- **🏗️ Architecture**: [ARCHITECTURE.md](ARCHITECTURE.md) - System design overview  
+- **🔧 Implementation**: [IMPLEMENTATION_GUIDE.md](IMPLEMENTATION_GUIDE.md) - Development handbook
+- **⚙️ Environment**: [.env.example](.env.example) - Configuration reference
+
+### 🆘 Getting Help
+- **Issues**: GitHub Issues for bugs and feature requests
+- **Discussions**: GitHub Discussions for questions and ideas
+- **Expo Docs**: [docs.expo.dev](https://docs.expo.dev)
+- **WatermelonDB**: [watermelondb.dev](https://watermelondb.dev)
 
 ---
 
