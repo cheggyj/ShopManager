@@ -1,16 +1,14 @@
 const { getDefaultConfig } = require('expo/metro-config');
+const { withNativeWind } = require('nativewind/metro');
 
-const config = getDefaultConfig(__dirname);
+/** @type {import('expo/metro-config').MetroConfig} */
+const config = getDefaultConfig(__dirname, {
+  // Enable CSS support for web
+  isCSSEnabled: true,
+});
 
-// Add support for more file extensions
-config.resolver.assetExts.push(
-  // Adds support for additional asset files
-  'db', 'mp3', 'ttf', 'obj', 'png', 'jpg'
-);
-
-// NativeWind support
-config.resolver.alias = {
-  '@': './src',
-};
-
-module.exports = config;
+// Enable NativeWind support
+module.exports = withNativeWind(config, {
+  input: './global.css',
+  configPath: './tailwind.config.js',
+});
