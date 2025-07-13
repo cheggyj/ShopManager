@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Shop Manager",
-    "slug": "shop-manager",
+    "slug": "shopmanager2",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -30,11 +30,12 @@
       },
       "package": "com.shopmanager.app",
       "permissions": [
-        "CAMERA",
-        "USE_FINGERPRINT",
-        "USE_BIOMETRIC",
-        "WRITE_EXTERNAL_STORAGE",
-        "READ_EXTERNAL_STORAGE"
+        "android.permission.CAMERA",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "web": {
@@ -75,8 +76,9 @@
         "origin": false
       },
       "eas": {
-        "projectId": "your-project-id-here"
+        "projectId": "ae33667d-beec-4d8d-992c-f2072a0f1f02"
       }
-    }
+    },
+    "owner": "cheggy001"
   }
 }
